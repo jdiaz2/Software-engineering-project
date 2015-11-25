@@ -1,0 +1,37 @@
+package SchedulesNTings;
+
+public class Employees {
+	
+	protected String name;
+	protected Integer ID;
+	private String availability;
+	
+	public void Set_Name(String n){
+		name = n;
+	}
+	
+	public void Set_ID(Integer i){
+		ID = i;
+	}
+	
+	public void Set_Availability(String a){
+		availability = a;
+	}
+	
+	public String Get_Name(){
+		return name;
+	}
+	
+	public Integer Get_ID(){
+		return ID;
+	}
+	
+	public String Get_Availability(){
+		return availability;
+	}
+	
+	/*public void Permissions(){
+		NEEDS TO BE DONE AT A LATER TIME
+	}*/
+
+}
