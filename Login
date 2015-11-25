@@ -1,0 +1,34 @@
+package SchedulesNTings;
+
+public class Login {
+
+	public String username;
+	public String password;
+	
+	public void Set_Username(String un){
+		username = un;
+	}
+	
+	public void Set_Password(String pw){
+		password = pw;
+	}
+	
+	public String Get_Username(){
+		return username;
+	}
+	
+	public String Get_Password(){
+		return password;
+	}
+	
+	public Boolean Verify_Login(String un, String pw){
+		if(un == username && pw == password)
+			return true;
+		else if(un != username)
+		System.out.println("Your username is incorrect.");
+		else if(pw != password)
+			System.out.println("Your password is incorrect.");
+		return false;
+	}
+
+}
