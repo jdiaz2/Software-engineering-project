@@ -5,6 +5,15 @@ public class Employees {
 	protected String name;
 	protected Integer ID;
 	private String availability;
+	protected boolean manager;
+	
+	
+	public Employees(String n, Integer id, String av, boolean m){
+		name = n;
+		ID = id;
+		availability = av;
+		manager = m;
+	}
 	
 	public void Set_Name(String n){
 		name = n;
@@ -18,6 +27,10 @@ public class Employees {
 		availability = a;
 	}
 	
+	public void Set_Manager_Status(boolean m){
+		manager = m;
+	}
+	
 	public String Get_Name(){
 		return name;
 	}
@@ -28,6 +41,10 @@ public class Employees {
 	
 	public String Get_Availability(){
 		return availability;
+	}
+	
+	public boolean Get_Manager_Status(){
+		return manager;
 	}
 	
 	/*public void Permissions(){
