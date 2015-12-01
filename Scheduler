@@ -1,0 +1,40 @@
+package SchedulesNTings;
+
+public class Scheduler {
+	public Employees employee = new Employees();
+	public String [][] weekdays;
+	
+	
+	//assigns a time slot to an employee
+	//gets employees availability
+	//check if another employee is already in a 
+	//particular slot
+	//if not, insert that employee
+	//if so, check for later shift or next day
+	public void Assign_Time_Slot(Employees emp){
+		
+	}
+	
+	//checks for conflicts with an employees availability
+	//gets the availability from the employee
+	//does a boolean check for if there is an overlap in 
+	//the time the employee can't work and the time the 
+	//manager schedules the employee
+	//returns a true if there is a conflict
+	//returns false if there is not
+	public boolean Check_Conflict(){
+		
+		//return false by default
+		return false;
+	}
+	
+	//finds an employees schedule
+	//takes in an employee
+	//and grabs their schedule from the weekdays array
+	//returns the employees schedule as a string
+	public String Find_Schedule(Employees emp){
+		
+		
+		return "";
+	}
+}
