@@ -1,0 +1,39 @@
+package SchedulesNTings;
+
+public class Managers extends Employees {
+	public void Review_Schedule(){
+		
+	}
+	
+	/*
+	 * changes the availability of an employee
+	 * takes in an employees current availability
+	 * use user input to change the availability
+	 */
+	public void Change_Availability(Employees emp, String av){
+		System.out.println("Change "+emp.getName()+" availability from "+emp.getAvailability()+" to "+av);
+		emp.setAvailability(av);
+	}
+	
+	/*
+	 * adds a new employee to the employee array/list
+	 * takes in a name, integer, string, and boolean of manager status
+	 * uses user prompts to get the information
+	 * returns the new employees information
+	 */
+	public Employees Add_Employee(String n, Integer id, String av, boolean m){
+		System.out.println("Enter employees name in the following format: John Hancock");
+		n = scan.nextLine();
+		System.out.println("Enter the employees ID number: ");
+		id = scan.nextInt();
+		System.out.println("Enter the employees availability in military format: i.e. 06:00 - 14:00");
+		av = scan.nextLine();
+		System.out.println("Enter the employees status as a manager, either yes or no");
+		if(scan.nextLine() == "yes")
+			m = true;
+		else
+			m = false;
+		Employees emp = new Employees(n,id,av,m);
+		return emp;
+	}
+}
