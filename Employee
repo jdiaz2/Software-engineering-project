@@ -1,12 +1,23 @@
 package SchedulesNTings;
+import java.util.Scanner;
 
 public class Employees {
 	
 	protected String name;
 	protected Integer ID;
-	private String availability;
+	protected String availability;
 	protected boolean manager;
+	Scanner scan = new Scanner(System.in);
+	Employees boss = new Employees("Dylan Holt", 000001,"06:30 - 20:00", true);
 	
+	
+	
+	public Employees(){
+		name = "";
+		ID = 000000;
+		availability = "";
+		manager = false;
+	}
 	
 	public Employees(String n, Integer id, String av, boolean m){
 		name = n;
@@ -15,35 +26,35 @@ public class Employees {
 		manager = m;
 	}
 	
-	public void Set_Name(String n){
+	public void setName(String n){
 		name = n;
 	}
 	
-	public void Set_ID(Integer i){
+	public void setID(Integer i){
 		ID = i;
 	}
 	
-	public void Set_Availability(String a){
+	public void setAvailability(String a){
 		availability = a;
 	}
 	
-	public void Set_Manager_Status(boolean m){
+	public void setManager_Status(boolean m){
 		manager = m;
 	}
 	
-	public String Get_Name(){
+	public String getName(){
 		return name;
 	}
 	
-	public Integer Get_ID(){
+	public Integer getID(){
 		return ID;
 	}
 	
-	public String Get_Availability(){
+	public String getAvailability(){
 		return availability;
 	}
 	
-	public boolean Get_Manager_Status(){
+	public boolean getManager_Status(){
 		return manager;
 	}
 	
